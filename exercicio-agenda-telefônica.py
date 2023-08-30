@@ -21,3 +21,12 @@ while (sair==False):
             os.system('cls')
             for p in agenda:
              print(p)
+        if (opcao==3):#Modifica o último contato presente na agenda
+                nome=input("\nDigite o nome do contato a ser editado: ")
+                for  i in range(len(agenda)):
+                    if (agenda[i][0]==nome):
+                        novo_nome=input("Digite o novo nome do contato:")
+                        novo_numero=input("Digite o novo número do contato: ")
+                        agenda[i][0]=novo_nome
+                        agenda[i][1]=novo_numero
+                        os.system('cls')
