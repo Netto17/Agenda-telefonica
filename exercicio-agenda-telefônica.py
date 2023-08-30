@@ -17,5 +17,7 @@ while (sair==False):
         novo_contato.append(numero)
         agenda.append(novo_contato)
         os.system('cls')
-
+    if(opcao==2):
+        for p in agenda:
+            print(p)
 
